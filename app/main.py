@@ -6,7 +6,7 @@ from .ml_models.email_click_prediction import PredictionModel
 app = FastAPI()
 model = PredictionModel()
 
-@app.post("/predict/")
+@app.post("/predict")
 def predict(output: Output = Depends(model.predict)):
     return output
 
