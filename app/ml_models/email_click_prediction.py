@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from typing import Union
-from ..models.prediction import Input, Output
+from app.models.prediction import Input, Output
 
 
 class PredictionModel:

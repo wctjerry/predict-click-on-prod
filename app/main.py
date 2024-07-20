@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
-from .models.prediction import Output
-from .ml_models.email_click_prediction import PredictionModel
+from app.models.prediction import Output
+from app.ml_models.email_click_prediction import PredictionModel
 
 
 app = FastAPI()
